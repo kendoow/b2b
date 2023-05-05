@@ -51,7 +51,7 @@ const Form = () => {
 			<DatePicker className={styles.datepicker} selected={startDate} onChange={(date: any) => setStartDate(date)} />
 			<textarea className={styles.textarea} placeholder='Оставь комментарий, если считаешь нужным' value={comment} onChange={commentChange} />
 			<div className={styles.buttons}>
-				<Button onClick={setDefaultValue} disabled={!Boolean(floor || room || tower)}>Очистить </Button>
+				<Button onClick={setDefaultValue}>Очистить </Button>
 				<Button variant='secondary' disabled={disabled}>Отправить </Button>
 			</div>
 		</form>
