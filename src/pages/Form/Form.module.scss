@@ -1,0 +1,41 @@
+.app{
+	display: flex;
+	justify-content: center;
+
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	background-color: #fff;
+	border-radius: 30px;
+	padding: 40px;	
+	max-width:500px;
+	.datepicker{
+		
+		border-radius: 5px;
+		cursor: pointer;
+		height: 30px;
+		width: 400px;
+		background: #ffffff;
+		border: 2px solid #3f4350;
+		font-size: 22px;
+		padding: 30px;
+		width: 200px;
+	}
+	.textarea{
+		border-radius: 5px;	
+		height: 200px;
+		border: 2px solid #3f4350;
+		width: 400px;
+		font-size: 22px;
+		resize: none;
+		padding:5px;
+	}
+	.buttons{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+}
