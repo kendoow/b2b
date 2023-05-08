@@ -48,7 +48,7 @@ const Form = () => {
 			<Dropdown state={tower} setState={setTower} options={towers} onChange={useCallback((tower: string | null) => setTower(tower), [])} placeholder="Выбери башню" />
 			<Dropdown state={floor} setState={setFloor} options={floors} onChange={useCallback((floor: string | null) => setFloor(floor), [])} placeholder="Выбери этаж" />
 			<Dropdown state={room} setState={setRoom} options={rooms} onChange={useCallback((room: string | null) => setRoom(room), [])} placeholder="Выбери переговорную" />
-			<DatePicker className={styles.datepicker} selected={startDate} onChange={(date: any) => setStartDate(date)} />
+			<DatePicker className={styles.datepicker} showTimeSelect selected={startDate} onChange={(date: any) => setStartDate(date)} />
 			<textarea className={styles.textarea} placeholder='Оставь комментарий, если считаешь нужным' value={comment} onChange={commentChange} />
 			<div className={styles.buttons}>
 				<Button onClick={setDefaultValue}>Очистить </Button>
